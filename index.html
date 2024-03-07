@@ -111,10 +111,10 @@
             <h2 class="text-center text-3xl font-semibold">P.H Paribahan</h2>
             <p class="text-sm text-center">Yes, you can run unit tests and view the results directly within the app. The
                 integrated</p>
-            <div class="flex shadow-xl rounded-xl justify-center items-center">
-                <div class="rounded-xl my-8 py-5 px-5 w-[70%]">
-                    <div class="flex justify-between">
-                        <div class=" flex">
+            <div class="lg:flex shadow-xl rounded-xl justify-center items-center">
+                <div class="rounded-xl my-8 py-5 px-5 lg:w-[70%]">
+                    <div class="lg:flex justify-between">
+                        <div class=" lg:flex">
                             <div class="mr-4">
                                 <img src="./images/bus-logo.png" alt="">
                             </div>
@@ -160,8 +160,8 @@
                     </div>
 
                 </div>
-                <img src="./images/info-devider.png" alt="">
-                <div>
+                <img class="hidden lg:block" src="./images/info-devider.png" alt="">
+                <div class="">
                     <img src="./images/fare.png" alt="">
                     <img src="./images/per-seat.png" alt="">
                 </div>
@@ -169,9 +169,9 @@
         </section>
         <!-- Select set section -->
         <section id="seatSelect" class="container mx-auto py-10">
-            <div class="flex">
+            <div class="lg:flex">
                 <!-- seat section start -->
-                <div class="w-[60%] pr-5 border-r-2 border-dotted">
+                <div class="lg:w-[60%] pr-5 border-r-2 border-dotted">
                     <h3 class="font-bold py-3">Select Your Seat</h3>
                     <hr class="border-dashed border-1 border-gray-300">
                     <div class="flex justify-between py-3">
@@ -246,7 +246,7 @@
                 </div>
                 <!-- Seat section end -->
                 <!-- calculation section -->
-                <div class=" w-[40%] py-10">
+                <div class=" lg:w-[40%] py-10">
                     <div class="mx-8">
                         <h3 class="font-bold py-3 text-xl">Select Your Seat</h3>
                         <hr class="border-2 border-dotted border-gray-300">
@@ -275,6 +275,15 @@
                                 </tr>
                             </thead>
                         </table>
+                        <table class="table table-zebra">
+                            <thead class=" text-base font-semibold">
+                                <tr>
+
+                                    <th>Discount</th>
+                                    <th class="text-end">BDT <span id="totalDiscount">00</span></th>
+                                </tr>
+                            </thead>
+                        </table>
                         <div class="join w-full p-5">
 
                             <input id="coupon" class="input join-item w-full" placeholder="Have any copupon?" />
@@ -300,7 +309,7 @@
                                 Name*</label>
                             <input type="text" id="name" name="name"
                                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                                placeholder="Enter your name" required />
+                                placeholder="Enter your name" required/>
                         </div>
                         <div class="mb-5">
                             <label for="Phone Number*"
@@ -308,7 +317,7 @@
                                 Number*</label>
                             <input type="number" id="number" placeholder="Enter your phone number" name="phone"
                                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                                required />
+                                required/>
                         </div>
                         <div class="mb-5">
                             <label for="repeat-password"
@@ -358,9 +367,9 @@
         <!-- Modal section end -->
     </main>
     <!-- Main section end -->
-    <footer class="bg-[#000000] text-white">
+    <footer class="bg-[#000000] text-white text-center">
         <div class="container mx-auto py-14">
-            <div class="flex justify-between">
+            <div class="lg:flex justify-between">
                 <div>
                     <h2 class="text-3xl font-bold">P-Ticket</h2>
                     <p class="text-sm">P-Ticket is a digital platform to make your </p>
@@ -372,9 +381,9 @@
                 </div>
             </div>
             <hr class="border-gray-500 border-dashed border-1 my-8">
-            <div class="text-xs flex justify-between">
+            <div class="text-xs lg:flex justify-between">
                 <p>@all rights reserved, P-Ticket services limited.2024</p>
-                <div class="flex">
+                <div class="lg:flex">
                     <p>Terms & condition</p>
                     <p class="px-5">Return & refund policy</p>
                     <p>Privacy policy</p>

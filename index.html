@@ -189,7 +189,7 @@
                         <img src="./images/staring.png" alt="">
                     </div>
                     <!-- Seat section -->
-                    <div class="grid grid-cols-5 gap-10 py-5" id="ticketGrid">
+                    <div class="grid grid-cols-5 gap-10 py-5" id="sit-section">
 
                         <button>A</button>
                         <button id="A1" class="btn seat">A1</button>
@@ -257,32 +257,21 @@
                             <thead class=" text-base font-semibold">
                                 <tr>
 
-                                    <th>Seat <span class="bg-[#1DD100] px-1 rounded-md" id="selectedItem">0</span></th>
+                                    <th>Seat <span class="bg-[#1DD100] px-1 rounded-md" id="selectedSeat">0</span></th>
                                     <th class="text-center">Class</th>
                                     <th class="text-end">Price</th>
                                 </tr>
                             </thead>
-                            <tbody class="border-none">
-
-
+                            <tbody class="border-none" id="seat-info">
+                                
                             </tbody>
-
-                            <!-- <tfoot class=" font-bold">
-                                <tr>
-
-                                    <td>Total price</td>
-                                    <td>:</td>
-                                    <td><span class="" id="totalPrice">0.00</span></td>
-
-                                </tr>
-                            </tfoot> -->
                         </table>
                         <table class="table table-zebra">
                             <thead class=" text-base font-semibold">
                                 <tr>
 
-                                    <th>Grand Total</th>
-                                    <th class="text-end">BDT 1100</th>
+                                    <th>Total</th>
+                                    <th class="text-end">BDT <span id="totalPrice">00</span></th>
                                 </tr>
                             </thead>
                         </table>
@@ -298,7 +287,7 @@
                                 <tr>
 
                                     <th>Grand Total</th>
-                                    <th class="text-end">BDT 1100</th>
+                                    <th class="text-end">BDT <span id="grandTotalPrice">00</span></th>
                                 </tr>
                             </thead>
                         </table>
@@ -376,6 +365,7 @@
             </div>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>

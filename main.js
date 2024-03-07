@@ -68,10 +68,36 @@ for (const seat of allSeats) {
         }
     })
 }
+// Next button section 
+const number = document.getElementById('number')
+const numberValue = number.value
+const name = document.getElementById('name');
+const email = document.getElementById('email')
+const nextButton = document.getElementById('nextButton')
+console.log(numberValue);
+number.addEventListener('input',function(e){
+    if(e.target.value.length>7){
+        nextButton.disabled = false
+    }
+})
+
+nextButton.addEventListener('click',function(){
+    if(name.value == " " || email.value == "" ){
+        alert("Did not provide your name or email")
+    }else{
+        document.getElementById('my_modal_1').showModal()
+        event.preventDefault()
+        name.value =" "
+        email.value = " "
+        number.value = " "
+        nextButton.disabled = true
+
+    }
+    
+})
 
 function getConvertedValue(id) {
     const myValue = document.getElementById(id).innerText
     const convertedMyValue = Number(myValue)
     return convertedMyValue;
 }
-getConvertedValue('remaining-seats')
